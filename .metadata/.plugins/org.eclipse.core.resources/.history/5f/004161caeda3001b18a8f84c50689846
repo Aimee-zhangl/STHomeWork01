@@ -1,0 +1,13 @@
+package exercise;
+
+import java.util.Date;
+
+public class Student {
+	private int ID; // 学号
+	private String name; // 姓名
+	private Date birDate; // 出生日期
+	private boolean gender; // 性别 false->female true->male
+	
+	
+	
+}

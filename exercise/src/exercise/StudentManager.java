@@ -109,7 +109,7 @@ public class StudentManager {
 			System.out.println("没有找到对应的信息！");
 		}
 	}
-	
+	//页面输出效果
 	private void printMenu() {
 		System.out.println("************************");
 		System.out.println("*        1 插入                       *");
