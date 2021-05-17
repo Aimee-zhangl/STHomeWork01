@@ -8,14 +8,16 @@ import java.util.Scanner;
 
 public class StudentManager {
 	
+	
 	private List<Student> students;
 	private Scanner scanner;
+
 	
 	public StudentManager() {
 		this.students = new ArrayList<Student>();
 		this.scanner = new Scanner(System.in);
 	}
-	
+	//插入功能
 	private void insert() {
 		if (students.size() > 20) {
 			System.out.println("最多可以保存20个学生信息！");
@@ -48,7 +50,7 @@ public class StudentManager {
 			System.out.println(stu);
 		}
 	}
-	
+	//查找功能
 	private void search() {
 		System.out.println("输入姓名开始查找: ");
 		String name = scanner.next();
@@ -63,7 +65,7 @@ public class StudentManager {
 			System.out.println("没有找到对应的学生信息！");
 		}
 	}
-
+	//删除功能
 	private void delete() {
 		System.out.println("输入姓名开始删除: ");
 		String name = scanner.next();
@@ -82,7 +84,7 @@ public class StudentManager {
 			System.out.println("删除成功！");
 		}
 	}
-	
+	//修改信息
 	private void update() {
 		System.out.println("输入姓名开始修改信息: ");
 		String name = scanner.next();
